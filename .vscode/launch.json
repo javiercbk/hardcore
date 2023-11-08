@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(cppvsdbg) Debug hardcore",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/zig-out/bin/hardcore.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/zig-out/bin",
+            "symbolSearchPath": "${workspaceFolder}/zig-out/bin",
+            "environment": [],
+            "externalConsole": false,
+            "logging": {
+                "moduleLoad": false
+            },
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "(lldb) Debug hardcore",
+            "program": "${workspaceFolder}/zig-out/bin/hardcore.exe",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build"  
+        }
+    ]
+}

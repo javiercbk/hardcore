@@ -1,0 +1,19 @@
+// because zon file is really just a zig struct
+// comments are really done in the same way using 2 forward slashes
+.{
+    // the name of your project
+    .name = "my-wtf-project",
+    // the version of your project
+    .version = "0.0.1",
+
+    // the actual packages you need as dependencies of your project
+    .dependencies = .{
+        // the name of the package
+        // .zigwin32 = .{
+        // the url to the release of the module
+        // .url = "https://github.com/marlersoft/zigwin32",
+        // the hash of the module, this is not the checksum of the tarball
+        // .hash = "",
+        // },
+    },
+}
